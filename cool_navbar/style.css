@@ -1,3 +1,6 @@
+body {
+    background-color: #fff;
+}
 * {
     margin: 0;
     padding: 0;
@@ -20,15 +23,16 @@
 }
 
 .item {
-    border-top: 1px solid #25b898;
+    border-top: 1px solid #8e44ad;
     overflow: hidden;
 }
 
 .btn {
     display: block;
     padding: 16px 20px;
-    background: #2de5bd;
-    color: #333;
+    background: #9b59b6;
+    color: #ecf0f1;
+    font-weight: bold;
     position: relative;
 }
 
@@ -37,7 +41,7 @@
     position: absolute;
     width: 14px;
     height: 14px;
-    background: #2de5bd;
+    background: #9b59b6;
     left: 20px;
     bottom: -7px;
     transform: rotate(45deg);
@@ -47,8 +51,12 @@
     margin-right: 10px;
 }
 
+.btn:hover {
+    color: #bdc3c7;
+}
+
 .smenu {
-    background: #333;
+    background: #2c3e50;
     overflow: hidden;
     transition: max-height 0.3s;
     max-height: 0;
@@ -57,8 +65,9 @@
 .smenu a {
     display: block;
     padding: 16px 26px;
-    color: #eee;
+    color: #ecf0f1;
     font-size: 14px;
+    font-weight: bold;
     margin: 4px 0;
     position: relative;
 }
@@ -68,11 +77,15 @@
     position: absolute;
     width: 6px;
     height: 100%;
-    background: #2de5bd;
+    background: #9b59b6;
     left: 0;
     top: 0;
     transition: 0.3s;
     opacity: 0;
+}
+
+.smenu a:hover {
+    color: #bdc3c7;
 }
 
 .smenu a:hover:before {
